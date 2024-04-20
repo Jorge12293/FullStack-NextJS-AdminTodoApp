@@ -18,7 +18,7 @@ const menuItems = [
         path: '/dashboard/rest-todo',
     },
     {
-        id: 2,
+        id: 3,
         icon: <IoListOutline size={30} />,
         title: 'Server Actions',   
         path: '/dashboard/server-todo',
@@ -37,7 +37,8 @@ export const Sidebar = () => {
                                 className="w-32" 
                                 alt="tailus logo" 
                                 width={32}
-                                height={32} />
+                                height={32} 
+                                priority={true}/>
                         </Link>
                     </div>
 
@@ -47,7 +48,8 @@ export const Sidebar = () => {
                             alt="Avatar User" 
                             className="m-auto rounded-full object-cover"
                             width={100} 
-                            height={100} />
+                            height={100} 
+                            priority={true}/>
                         <h5 className="hidden mt-4 text-xl font-semibold text-gray-600 lg:block">Cynthia J. Watts</h5>
                         <span className="hidden text-gray-400 lg:block">Admin</span>
                     </div>
