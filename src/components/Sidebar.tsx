@@ -44,13 +44,13 @@ export const Sidebar = () => {
 
                     <div className="mt-8 text-center">
                         <Image 
-                            src="https://tailus.io/sources/blocks/stats-cards/preview/images/second_user.webp" 
+                            src="https://ampire.tailus.io/images/avatars/avatar-4.webp" 
                             alt="Avatar User" 
                             className="m-auto rounded-full object-cover"
                             width={100} 
                             height={100} 
                             priority={true}/>
-                        <h5 className="hidden mt-4 text-xl font-semibold text-gray-600 lg:block">Cynthia J. Watts</h5>
+                        <h5 className="hidden mt-4 text-xl font-semibold text-gray-600 lg:block">Jorge L. Rivera</h5>
                         <span className="hidden text-gray-400 lg:block">Admin</span>
                     </div>
 

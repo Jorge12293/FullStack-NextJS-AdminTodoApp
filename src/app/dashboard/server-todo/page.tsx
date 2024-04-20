@@ -1,7 +1,19 @@
-export default function ServerTodoPage(){
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
+
+import prisma from "@/lib/prisma";
+import { NewTodo } from "@/todo/components/NewTodo";
+import { TodoGrid } from "@/todo/components/TodoGrid";
+
+export default async function ServerTodoPage(){
+    const listTodo = await prisma.todo.findMany({ orderBy: { description: 'asc' } });
     return (
-        <div>
-            <h1>Page Server Todo</h1>
+        <div className="mt-5">
+            <div className="w-full px-3 mx-5 mb-5">
+                <NewTodo />
+            </div>
+            <TodoGrid listTodo={listTodo}/>
         </div>
     );
 }
