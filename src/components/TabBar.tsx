@@ -35,7 +35,8 @@ export const TabBar = ({ tabOptions = [1, 2, 3, 4, 5], currentTab = 1 }: Props) 
                             type="radio" id={tab.toString()} className="peer hidden" />
                         <label
                             onClick={() => onTabSelected(tab)}
-                            className="transition-all block cursor-pointer select-none rounded-xl p-2 text-center peer-checked:bg-blue-500 
+                            className="transition-all block cursor-pointer select-none rounded-xl p-2 text-center 
+                            peer-checked:bg-blue-500 
                             peer-checked:font-bold peer-checked:text-white">
                             {tab}
                         </label>

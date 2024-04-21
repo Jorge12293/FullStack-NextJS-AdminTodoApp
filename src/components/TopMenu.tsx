@@ -42,12 +42,14 @@ export const TopMenu = () => {
            active:bg-gray-200 md:hidden">
             <CiSearch />
           </button>
-          <button className="flex items-center justify-center w-10 h-10 rounded-xl border bg-gray-100 focus:bg-gray-100 active:bg-gray-200">
+          <button className="flex items-center justify-center w-10 h-10 rounded-xl border bg-gray-100 focus:bg-gray-100
+           active:bg-gray-200">
             <CiChat1 size={25} />
           </button>
           <Link 
             href={'/dashboard/cart'}
-            className="p-2 flex items-center justify-center h-10 rounded-xl border bg-gray-100 focus:bg-gray-100 active:bg-gray-200">
+            className="p-2 flex items-center justify-center h-10 rounded-xl border bg-gray-100 focus:bg-gray-100 
+            active:bg-gray-200">
             {
               (totalItems > 0) &&
               (
