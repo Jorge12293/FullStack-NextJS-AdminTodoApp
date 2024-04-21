@@ -2,6 +2,7 @@
 
 /postgres
 /.env
+/.env.local
 
 # dependencies
 /node_modules
@@ -29,11 +30,11 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
-.env*.local
+# .env*.local
 
 # vercel
 .vercel
 
 # typescript
 *.tsbuildinfo
-next-env.d.ts
+# next-env.d.ts
