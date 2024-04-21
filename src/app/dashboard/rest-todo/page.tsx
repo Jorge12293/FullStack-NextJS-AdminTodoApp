@@ -2,8 +2,8 @@ export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 
 import prisma from "@/lib/prisma";
-import { NewTodo } from "@/todo/components/NewTodo";
-import { TodoGrid } from "@/todo/components/TodoGrid";
+import { NewTodo } from "@/modules/todo/components/NewTodo";
+import { TodoGrid } from "@/modules/todo/components/TodoGrid";
 
 export default async function RestTodoPage() {
     const listTodo = await prisma.todo.findMany({ orderBy: { description: 'asc' } });
@@ -16,3 +16,4 @@ export default async function RestTodoPage() {
         </div>
     );
 }
+

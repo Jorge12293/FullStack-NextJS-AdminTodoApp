@@ -1,5 +1,5 @@
 import { products } from "@/data/products";
-import { ProductCard } from "@/products/components/ProductCard";
+import { ProductCard } from "@/modules/products/components/ProductCard";
 
 export default function ProductsPage() {
     return (

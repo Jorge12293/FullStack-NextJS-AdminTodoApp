@@ -2,7 +2,7 @@
 
 import { FormEvent, useState } from "react";
 import { IoTrashOutline } from "react-icons/io5";
-import * as api from '@/todo/helpers/todo';
+import * as api from '@/modules/todo/helpers/todo';
 import { useRouter } from "next/navigation";
 import { addTodo, deleteTodo } from "../actions/todo-actions";
 

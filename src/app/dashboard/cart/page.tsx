@@ -1,6 +1,6 @@
 import { WidgetItem } from "@/components/WidgetItem";
 import { Product, products } from "@/data/products";
-import { ItemCard } from "@/shopping-cart/components/ItemCart";
+import { ItemCard } from "@/modules/shopping-cart/components/ItemCart";
 import { cookies } from "next/headers";
 
 export const metadata = {

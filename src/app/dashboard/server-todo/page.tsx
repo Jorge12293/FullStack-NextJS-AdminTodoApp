@@ -3,8 +3,8 @@ export const revalidate = 0;
 
 
 import prisma from "@/lib/prisma";
-import { NewTodo } from "@/todo/components/NewTodo";
-import { TodoGrid } from "@/todo/components/TodoGrid";
+import { NewTodo } from "@/modules/todo/components/NewTodo";
+import { TodoGrid } from "@/modules/todo/components/TodoGrid";
 
 export default async function ServerTodoPage(){
     const listTodo = await prisma.todo.findMany({ orderBy: { description: 'asc' } });
