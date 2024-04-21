@@ -9,6 +9,10 @@ const nextConfig = {
             {
                 protocol: 'https',
                 hostname: 'ampire.tailus.io'
+            },
+            {
+                protocol: 'https',
+                hostname: 'www.w3.org'
             }
         ]
     }
