@@ -16,6 +16,9 @@ export default function ProfilePage(){
                 <span>{session.data?.user?.name ?? 'No name'}</span>
                 <span>{session.data?.user?.email ?? 'No email'}</span>
             </div>
+            <div>
+                {JSON.stringify(session)}
+            </div>
         </div>
     )
 }

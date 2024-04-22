@@ -14,10 +14,10 @@ export const NewTodo = () => {
   const onSubmit = async (e: FormEvent) => {
     e.preventDefault();
     if (description.trim().length === 0) return;
-    //await api.createTodo(description);
-    await addTodo(description)
+    await api.createTodo(description);
+    //await addTodo(description)
     setDescription('')
-    //router.refresh();
+    router.refresh();
   }
 
 
